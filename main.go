@@ -1,12 +1,11 @@
 package main
 
 import (
-	"beeblog/controllers"
 	"github.com/astaxie/beego"
+	"github.com/shxsun/gobuild-beegotest/controllers"
 )
 
 func main() {
 	beego.Router("/", &controllers.MainController{})
 	beego.Run()
 }
-
